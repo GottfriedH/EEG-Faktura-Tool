@@ -4,6 +4,7 @@ Tool zum Erstellen von SEPA-Datenträgern für die EEG-Faktura
 ACHTUNG: Der Autor übernimmt keine KEINE Haftung für dieses Tool. Die Verwendung erfolgt auf eigene Gefahr!
 
 A) VORAUSSETZUNGEN
+
 	1) Microsoft Excel (R) muss installiert sein!
 
 B) INSTALLATION:
