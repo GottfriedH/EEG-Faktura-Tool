@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6DF4A12-AF86-43A0-9C6D-0C16200D9595}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EEG_Faktura_Tool</RootNamespace>
+    <AssemblyName>EEG-Faktura-Tool</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Glob, Version=5.0.0.0, Culture=neutral, PublicKeyToken=2561fd83231d3038, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glob.cs.5.1.1491\lib\net461\Glob.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquidTechnologies.XmlObjects.Runtime, Version=20.7.16.13170, Culture=neutral, PublicKeyToken=64bee40f6e1c14f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiquidTechnologies.XmlObjects.Runtime.20.7.16\lib\net45\LiquidTechnologies.XmlObjects.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Options, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Options.6.12.0.148\lib\net40\Mono.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Portable.System.DateTimeOnly, Version=7.0.1.0, Culture=neutral, PublicKeyToken=16fb7a27ac3b9689, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.System.DateTimeOnly.7.0.1\lib\net462\Portable.System.DateTimeOnly.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartAssembly.Attributes, Version=8.1.1.4963, Culture=neutral, PublicKeyToken=7f465a1c156d4d57, processorArchitecture=MSIL">
+      <HintPath>..\packages\RedGate.SmartAssembly.Attributes.8.1.1.4963\lib\net20\SmartAssembly.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.8.0.0\lib\net462\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.1\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IO.Abstractions, Version=20.0.0.0, Culture=neutral, PublicKeyToken=96bf224d23c43e59, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Abstractions.20.0.15\lib\net462\System.IO.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Abstractions.TestingHelpers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=96bf224d23c43e59, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Abstractions.TestingHelpers.20.0.15\lib\net462\System.IO.Abstractions.TestingHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Primitives, Version=4.6.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ServiceModel.Primitives.4.6.0\lib\net461\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.8.0.0\lib\net462\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TestableIO.System.IO.Abstractions, Version=20.0.0.0, Culture=neutral, PublicKeyToken=96bf224d23c43e59, processorArchitecture=MSIL">
+      <HintPath>..\packages\TestableIO.System.IO.Abstractions.20.0.15\lib\net462\TestableIO.System.IO.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="TestableIO.System.IO.Abstractions.TestingHelpers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=96bf224d23c43e59, processorArchitecture=MSIL">
+      <HintPath>..\packages\TestableIO.System.IO.Abstractions.TestingHelpers.20.0.15\lib\net462\TestableIO.System.IO.Abstractions.TestingHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="TestableIO.System.IO.Abstractions.Wrappers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=96bf224d23c43e59, processorArchitecture=MSIL">
+      <HintPath>..\packages\TestableIO.System.IO.Abstractions.Wrappers.20.0.15\lib\net462\TestableIO.System.IO.Abstractions.Wrappers.dll</HintPath>
+    </Reference>
+    <Reference Include="XmlSchemaClassGenerator, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4ac343b5e343bf8c, processorArchitecture=MSIL">
+      <HintPath>..\packages\XmlSchemaClassGenerator-beta.2.1.1167\lib\net462\XmlSchemaClassGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="XObjectsCore, Version=3.4.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XObjectsCore.3.4.7\lib\netstandard2.0\XObjectsCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EEG-Faktura\Dokumenttyp.cs" />
+    <Compile Include="EEG-Faktura\EEGFakturaPaymentItem.cs" />
+    <Compile Include="EEGFakturaTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EEGFakturaTool.Designer.cs">
+      <DependentUpon>EEGFakturaTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ExcelHelper.cs" />
+    <Compile Include="Sepa\Lastschrift\ISO_pain_008_001_02_austrian_004_Korrigendum.cs" />
+    <Compile Include="Sepa\Lastschrift\MandatImporter.cs" />
+    <Compile Include="Sepa\Lastschrift\Mapping.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EEG-Faktura\EegFakturaImporter.cs" />
+    <Compile Include="Sepa\Lastschrift\SepaMandat.cs" />
+    <Compile Include="Sepa\SepaExporter.cs" />
+    <Compile Include="Sepa\SepaConfiguration.cs" />
+    <Compile Include="Sepa\SepaLastschriftDocument.cs" />
+    <Compile Include="Sepa\SepaUeberweisungDocument.cs" />
+    <Compile Include="Sepa\Ueberweisung\ISO_pain_001_001_03_austrian_003.cs" />
+    <Compile Include="Sepa\Ueberweisung\ISO_pain_001_001_09_austrian_004.cs" />
+    <Compile Include="Sepa\Ueberweisung\Mapping.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="EEGFakturaTool.resx">
+      <DependentUpon>EEGFakturaTool.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\EEG_Faktura_Sepa_Tool.EEG_Faktura.EEGFakturaPaymentItem.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Schemas\ISO.pain.001.001.03.austrian.003\ISO.pain.001.001.03.austrian.003.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\ISO.pain.001.001.03.austrian.003\RB6.0_pain.001_codelists.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\ISO.pain.001.001.09.austrian.004\ISO.pain.001.001.09.austrian.004.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\ISO.pain.001.001.09.austrian.004\pain.001.001.09.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\ISO.pain.001.001.09.austrian.004\pain.001.codelists.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\ISO.pain.008.001.02.austrian.004.Korrigendum\ISO.pain.008.001.02.austrian.004.Korrigendum.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\ISO.pain.008.001.02.austrian.004.Korrigendum\pain.008.001.02.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\ISO.pain.008.001.02.austrian.004.Korrigendum\pain.008_codelists.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

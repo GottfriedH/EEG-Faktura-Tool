@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EEG_Faktura_Sepa_Tool.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BIC" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">RZxxATxxxxx</Value>
+    </Setting>
+    <Setting Name="CreditorId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AT74ZZZ00000000000</Value>
+    </Setting>
+    <Setting Name="Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Name der EEG laut Vereinsregister</Value>
+    </Setting>
+    <Setting Name="IBAN" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AT000000000000000000</Value>
+    </Setting>
+    <Setting Name="Currency" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EUR</Value>
+    </Setting>
+    <Setting Name="Country" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AT</Value>
+    </Setting>
+    <Setting Name="AdresseZeile1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Musterstraße 1</Value>
+    </Setting>
+    <Setting Name="AdresseZeile2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1234 Musterhausen</Value>
+    </Setting>
+    <Setting Name="FixesLastschriftMandat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BelegeZusammenfassen" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
