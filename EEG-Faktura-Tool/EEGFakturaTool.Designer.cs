@@ -103,7 +103,7 @@
             this.sepaMandateImportierenToolStripMenuItem.Enabled = false;
             this.sepaMandateImportierenToolStripMenuItem.Name = "sepaMandateImportierenToolStripMenuItem";
             this.sepaMandateImportierenToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.sepaMandateImportierenToolStripMenuItem.Text = "Sepa-&Mandate importieren";
+            this.sepaMandateImportierenToolStripMenuItem.Text = "SEPA-&Mandate importieren";
             this.sepaMandateImportierenToolStripMenuItem.Click += new System.EventHandler(this.sepaMandateImportierenToolStripMenuItem_Click);
             // 
             // sepaDateiErstellenToolStripMenuItem
