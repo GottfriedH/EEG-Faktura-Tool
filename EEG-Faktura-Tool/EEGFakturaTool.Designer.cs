@@ -43,6 +43,7 @@
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.eEGFakturaPaymentItemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbxBelegeZusammenfassen = new System.Windows.Forms.CheckBox();
             this.lblCurrency = new System.Windows.Forms.Label();
             this.lblIBAN = new System.Windows.Forms.Label();
             this.lblBIC = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@
             this.tbAnschriftZeile2 = new System.Windows.Forms.TextBox();
             this.tbAnschriftZeile1 = new System.Windows.Forms.TextBox();
             this.tbNameEEG = new System.Windows.Forms.TextBox();
-            this.cbxBelegeZusammenfassen = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -103,7 +103,7 @@
             this.sepaMandateImportierenToolStripMenuItem.Enabled = false;
             this.sepaMandateImportierenToolStripMenuItem.Name = "sepaMandateImportierenToolStripMenuItem";
             this.sepaMandateImportierenToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.sepaMandateImportierenToolStripMenuItem.Text = "Sepa-Mandate importieren";
+            this.sepaMandateImportierenToolStripMenuItem.Text = "Sepa-&Mandate importieren";
             this.sepaMandateImportierenToolStripMenuItem.Click += new System.EventHandler(this.sepaMandateImportierenToolStripMenuItem_Click);
             // 
             // sepaDateiErstellenToolStripMenuItem
@@ -111,7 +111,7 @@
             this.sepaDateiErstellenToolStripMenuItem.Enabled = false;
             this.sepaDateiErstellenToolStripMenuItem.Name = "sepaDateiErstellenToolStripMenuItem";
             this.sepaDateiErstellenToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.sepaDateiErstellenToolStripMenuItem.Text = "SEPA-Dateien erstellen";
+            this.sepaDateiErstellenToolStripMenuItem.Text = "SEPA-&Datenträger erstellen";
             this.sepaDateiErstellenToolStripMenuItem.Click += new System.EventHandler(this.sEPADateiErstellenToolStripMenuItem_Click);
             // 
             // einzungsdatumToolStripMenuItem
@@ -122,6 +122,7 @@
             // 
             // tstb_Einzungsdatum
             // 
+            this.tstb_Einzungsdatum.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tstb_Einzungsdatum.Name = "tstb_Einzungsdatum";
             this.tstb_Einzungsdatum.Size = new System.Drawing.Size(68, 23);
             this.tstb_Einzungsdatum.Text = "Einzugsdatum:";
@@ -134,6 +135,7 @@
             // 
             // tstb_Ueberweisungsdatum
             // 
+            this.tstb_Ueberweisungsdatum.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tstb_Ueberweisungsdatum.Name = "tstb_Ueberweisungsdatum";
             this.tstb_Ueberweisungsdatum.Size = new System.Drawing.Size(68, 23);
             this.tstb_Ueberweisungsdatum.Text = "Überweisungsdatum:";
@@ -192,10 +194,21 @@
             this.panel1.Controls.Add(this.tbNameEEG);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 361);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 67);
             this.panel1.TabIndex = 3;
+            // 
+            // cbxBelegeZusammenfassen
+            // 
+            this.cbxBelegeZusammenfassen.AutoSize = true;
+            this.cbxBelegeZusammenfassen.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbxBelegeZusammenfassen.Location = new System.Drawing.Point(632, 23);
+            this.cbxBelegeZusammenfassen.Name = "cbxBelegeZusammenfassen";
+            this.cbxBelegeZusammenfassen.Size = new System.Drawing.Size(143, 17);
+            this.cbxBelegeZusammenfassen.TabIndex = 2;
+            this.cbxBelegeZusammenfassen.Text = "Belege zusammenfassen";
+            this.cbxBelegeZusammenfassen.UseVisualStyleBackColor = true;
             // 
             // lblCurrency
             // 
@@ -271,7 +284,7 @@
             // 
             this.tbBIC.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbBIC.Location = new System.Drawing.Point(451, 24);
-            this.tbBIC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbBIC.Margin = new System.Windows.Forms.Padding(2);
             this.tbBIC.Name = "tbBIC";
             this.tbBIC.ReadOnly = true;
             this.tbBIC.Size = new System.Drawing.Size(179, 13);
@@ -281,7 +294,7 @@
             // 
             this.tbCreditorId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbCreditorId.Location = new System.Drawing.Point(451, 43);
-            this.tbCreditorId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCreditorId.Margin = new System.Windows.Forms.Padding(2);
             this.tbCreditorId.Name = "tbCreditorId";
             this.tbCreditorId.ReadOnly = true;
             this.tbCreditorId.Size = new System.Drawing.Size(179, 13);
@@ -291,7 +304,7 @@
             // 
             this.tbCurrency.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbCurrency.Location = new System.Drawing.Point(690, 5);
-            this.tbCurrency.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCurrency.Margin = new System.Windows.Forms.Padding(2);
             this.tbCurrency.Name = "tbCurrency";
             this.tbCurrency.ReadOnly = true;
             this.tbCurrency.Size = new System.Drawing.Size(42, 13);
@@ -301,7 +314,7 @@
             // 
             this.tbIBAN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbIBAN.Location = new System.Drawing.Point(451, 5);
-            this.tbIBAN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbIBAN.Margin = new System.Windows.Forms.Padding(2);
             this.tbIBAN.Name = "tbIBAN";
             this.tbIBAN.ReadOnly = true;
             this.tbIBAN.Size = new System.Drawing.Size(179, 13);
@@ -311,7 +324,7 @@
             // 
             this.tbCountry.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbCountry.Location = new System.Drawing.Point(85, 43);
-            this.tbCountry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCountry.Margin = new System.Windows.Forms.Padding(2);
             this.tbCountry.Name = "tbCountry";
             this.tbCountry.ReadOnly = true;
             this.tbCountry.Size = new System.Drawing.Size(24, 13);
@@ -321,7 +334,7 @@
             // 
             this.tbAnschriftZeile2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbAnschriftZeile2.Location = new System.Drawing.Point(113, 43);
-            this.tbAnschriftZeile2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAnschriftZeile2.Margin = new System.Windows.Forms.Padding(2);
             this.tbAnschriftZeile2.Name = "tbAnschriftZeile2";
             this.tbAnschriftZeile2.ReadOnly = true;
             this.tbAnschriftZeile2.Size = new System.Drawing.Size(270, 13);
@@ -331,7 +344,7 @@
             // 
             this.tbAnschriftZeile1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbAnschriftZeile1.Location = new System.Drawing.Point(85, 24);
-            this.tbAnschriftZeile1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAnschriftZeile1.Margin = new System.Windows.Forms.Padding(2);
             this.tbAnschriftZeile1.Name = "tbAnschriftZeile1";
             this.tbAnschriftZeile1.ReadOnly = true;
             this.tbAnschriftZeile1.Size = new System.Drawing.Size(298, 13);
@@ -341,22 +354,11 @@
             // 
             this.tbNameEEG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbNameEEG.Location = new System.Drawing.Point(85, 5);
-            this.tbNameEEG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNameEEG.Margin = new System.Windows.Forms.Padding(2);
             this.tbNameEEG.Name = "tbNameEEG";
             this.tbNameEEG.ReadOnly = true;
             this.tbNameEEG.Size = new System.Drawing.Size(298, 13);
             this.tbNameEEG.TabIndex = 0;
-            // 
-            // cbxBelegeZusammenfassen
-            // 
-            this.cbxBelegeZusammenfassen.AutoSize = true;
-            this.cbxBelegeZusammenfassen.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbxBelegeZusammenfassen.Location = new System.Drawing.Point(632, 23);
-            this.cbxBelegeZusammenfassen.Name = "cbxBelegeZusammenfassen";
-            this.cbxBelegeZusammenfassen.Size = new System.Drawing.Size(143, 17);
-            this.cbxBelegeZusammenfassen.TabIndex = 2;
-            this.cbxBelegeZusammenfassen.Text = "Belege zusammenfassen";
-            this.cbxBelegeZusammenfassen.UseVisualStyleBackColor = true;
             // 
             // EEGFakturaTool
             // 
