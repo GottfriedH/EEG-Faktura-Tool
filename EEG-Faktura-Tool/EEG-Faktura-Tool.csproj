@@ -39,9 +39,6 @@
     <Reference Include="Glob, Version=5.0.0.0, Culture=neutral, PublicKeyToken=2561fd83231d3038, processorArchitecture=MSIL">
       <HintPath>..\packages\Glob.cs.5.1.1491\lib\net461\Glob.dll</HintPath>
     </Reference>
-    <Reference Include="LiquidTechnologies.XmlObjects.Runtime, Version=20.7.16.13170, Culture=neutral, PublicKeyToken=64bee40f6e1c14f0, processorArchitecture=MSIL">
-      <HintPath>..\packages\LiquidTechnologies.XmlObjects.Runtime.20.7.16\lib\net45\LiquidTechnologies.XmlObjects.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Options, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Mono.Options.6.12.0.148\lib\net40\Mono.Options.dll</HintPath>
     </Reference>
