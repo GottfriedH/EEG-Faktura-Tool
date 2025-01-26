@@ -111,9 +111,6 @@
     <Reference Include="XmlSchemaClassGenerator, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4ac343b5e343bf8c, processorArchitecture=MSIL">
       <HintPath>..\packages\XmlSchemaClassGenerator-beta.2.1.1167\lib\net462\XmlSchemaClassGenerator.dll</HintPath>
     </Reference>
-    <Reference Include="XObjectsCore, Version=3.4.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\XObjectsCore.3.4.7\lib\netstandard2.0\XObjectsCore.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EEG-Faktura\Dokumenttyp.cs" />

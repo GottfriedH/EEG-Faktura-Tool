@@ -52,7 +52,15 @@ namespace EEG_Faktura_Sepa_Tool
             dataGridView.Refresh();
 
             toolStripProgressBar.Visible = false;
-            sepaMandateImportierenToolStripMenuItem.Enabled = true;
+
+            if (_sepaConfiguration.FixesLastschriftMandat == "")
+            {
+                sepaMandateImportierenToolStripMenuItem.Enabled = true;
+            }
+            else
+            {
+                sepaDateiErstellenToolStripMenuItem.Enabled = true;
+            }
         }
 
         private bool progress(int percent)
