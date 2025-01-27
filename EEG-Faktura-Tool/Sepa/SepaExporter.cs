@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using EEG_Faktura_Sepa_Tool.EEG_Faktura;
@@ -108,18 +109,24 @@ namespace EEG_Faktura_Sepa_Tool
                 totalAmount += amount;
             }
 
+            string pathSepaLastschriften = Path.GetFullPath(@".\eegFakturaLastschrift.XML");
+            string pathSepaUeberweisung = Path.GetFullPath(@".\eegFakturaUeberweisung.XML");
+
             if (totalLastschriftenCount > 0)
             {
-                _sepaLastschrift.Export(@".\eegFakturaLastschrift.XML");
+                _sepaLastschrift.Export(pathSepaLastschriften);
             }
             if (totalUeberweisungCount > 0)
             {
-                _sepaUeberweisung.Export(@".\eegFakturaUeberweisung.XML");
+                _sepaUeberweisung.Export(pathSepaUeberweisung);
             }
 
-            MessageBox.Show($"Überweisungen:\t({totalUeberweisungCount})\t€ {totalUeberweisungAmount}" +
-                $"\r\nLastschriften:\t({totalLastschriftenCount})\t€ {totalLastschriftenAmount}" +
-                $"\r\nDifferenz:\t\t€ {totalAmount}", "Export abgeschlossen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Lastschriften:\t({totalLastschriftenCount})\t€ {totalLastschriftenAmount}" + 
+                $"\r\nÜberweisungen:\t({totalUeberweisungCount})\t€ {totalUeberweisungAmount}" +
+                $"\r\nDifferenz:\t\t€ {totalAmount}" +
+                $"\r\n" +
+                $"\r\nLastschriften: {pathSepaLastschriften}" +
+                $"\r\nÜberweisungen: {pathSepaUeberweisung}", "Export abgeschlossen", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private static string GetEndToEndIt(IGrouping<string, EEGFakturaPaymentItem> mitgliedsnummerGruppe)
