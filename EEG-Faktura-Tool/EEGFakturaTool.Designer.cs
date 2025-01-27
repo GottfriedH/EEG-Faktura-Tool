@@ -203,6 +203,7 @@
             // 
             this.cbxBelegeZusammenfassen.AutoSize = true;
             this.cbxBelegeZusammenfassen.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbxBelegeZusammenfassen.Enabled = false;
             this.cbxBelegeZusammenfassen.Location = new System.Drawing.Point(632, 23);
             this.cbxBelegeZusammenfassen.Name = "cbxBelegeZusammenfassen";
             this.cbxBelegeZusammenfassen.Size = new System.Drawing.Size(143, 17);
