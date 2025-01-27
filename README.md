@@ -41,14 +41,14 @@ D) SEPA-Datenträger erstellen
  	   Sollte sich die Anwendung nicht öffnen, bitte prüfen, ob sich in der Datei "EEG-Faktura-Tool.exe.config" ein Fehler eingeschlichen hat!   
 	2.1) Die Einstellungen im unteren Bereich der Maske prüfen!
  
- 	3) Menüpunkt "Datei / EEG-Faktura-Datei importieren" aufrufen und die Excel-Datei auswählen
+ 	3) Menüpunkt "SEPA-Datenträger / EEG-Faktura-Datei importieren" aufrufen und die Excel-Datei auswählen
   
-	4) OPTIONAL: Wenn keine fixe Mandatsreferenz verwendet wird, den Menüpunkt "Datei / Sepa-Mandate importieren" aufrufen
+	4) OPTIONAL: Wenn keine fixe Mandatsreferenz verwendet wird, den Menüpunkt "SEPA-Datenträger / Sepa-Mandate importieren" aufrufen
 	4.1) Es kommt eine Meldung mit der Anzahl der importierten Mandaten: Es wurde(n) xxx Mandat(e) importiert.
 	4.2) Die Mandate werden über die Mitgliedsnummer zugeordnet. Wenn alles passt kommt die Meldung: Es konnten alle Mandate zugeordnet werden.
 	     Ansonsten die Mandate ergänzen / korrigieren und den Vorgang wiederholen
       
-	5) Menüpunkt "Datei / Sepa-Datenträger erstellen" aufrufen
+	5) Menüpunkt "SEPA-Datenträger / Sepa-Datenträger erstellen" aufrufen
  
 	6) Für die Lastschriften und Überweisungen wird je eine Datei erstellt
 	   In der Datei für die Lastschriften wir für "SEPA-Lastschriften" (Private) und "SEPA-Firmenlastschriften" je ein Bestand erstellt

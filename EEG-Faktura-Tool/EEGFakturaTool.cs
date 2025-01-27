@@ -145,5 +145,10 @@ namespace EEG_Faktura_Sepa_Tool
 
             return true;
         }
+
+        private void CloseApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

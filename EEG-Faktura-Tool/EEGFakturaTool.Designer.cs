@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CloseApplicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sEPADatenträgerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importEegFakturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sepaMandateImportierenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sepaDateiErstellenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,6 +73,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
+            this.sEPADatenträgerToolStripMenuItem,
             this.einzungsdatumToolStripMenuItem,
             this.tstb_Einzungsdatum,
             this.überweisungsdatumToolStripMenuItem,
@@ -84,12 +87,27 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.importEegFakturaToolStripMenuItem,
-            this.sepaMandateImportierenToolStripMenuItem,
-            this.sepaDateiErstellenToolStripMenuItem});
+            this.CloseApplicationToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(46, 23);
             this.toolStripMenuItem1.Text = "&Datei";
+            // 
+            // CloseApplicationToolStripMenuItem
+            // 
+            this.CloseApplicationToolStripMenuItem.Name = "CloseApplicationToolStripMenuItem";
+            this.CloseApplicationToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.CloseApplicationToolStripMenuItem.Text = "Programm verlassen";
+            this.CloseApplicationToolStripMenuItem.Click += new System.EventHandler(this.CloseApplicationToolStripMenuItem_Click);
+            // 
+            // sEPADatenträgerToolStripMenuItem
+            // 
+            this.sEPADatenträgerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.importEegFakturaToolStripMenuItem,
+            this.sepaMandateImportierenToolStripMenuItem,
+            this.sepaDateiErstellenToolStripMenuItem});
+            this.sEPADatenträgerToolStripMenuItem.Name = "sEPADatenträgerToolStripMenuItem";
+            this.sEPADatenträgerToolStripMenuItem.Size = new System.Drawing.Size(112, 23);
+            this.sEPADatenträgerToolStripMenuItem.Text = "SEPA-Datenträger";
             // 
             // importEegFakturaToolStripMenuItem
             // 
@@ -420,6 +438,8 @@
         private System.Windows.Forms.ToolStripMenuItem einzungsdatumToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem überweisungsdatumToolStripMenuItem;
         private System.Windows.Forms.CheckBox cbxBelegeZusammenfassen;
+        private System.Windows.Forms.ToolStripMenuItem sEPADatenträgerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CloseApplicationToolStripMenuItem;
     }
 }
 
