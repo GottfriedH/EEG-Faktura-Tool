@@ -1,7 +1,7 @@
 ﻿using System;
 using Excel = Microsoft.Office.Interop.Excel;
 
-namespace EEG_Faktura_Sepa_Tool.Helper
+namespace EEG_Faktura_Tool.Helper
 {
     internal class ExcelHelper
     {

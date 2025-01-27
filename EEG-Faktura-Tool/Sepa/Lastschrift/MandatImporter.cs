@@ -1,4 +1,4 @@
-﻿using EEG_Faktura_Sepa_Tool.Helper;
+﻿using EEG_Faktura_Tool.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 
-namespace EEG_Faktura_Sepa_Tool.Sepa.Lastschrift
+namespace EEG_Faktura_Tool.Sepa.Lastschrift
 {
     internal class MandatImporter
     {

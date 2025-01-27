@@ -6,9 +6,9 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Text;
 using System.Windows.Forms;
-using EEG_Faktura_Sepa_Tool.Sepa.Lastschrift;
+using EEG_Faktura_Tool.Sepa.Lastschrift;
 
-namespace EEG_Faktura_Sepa_Tool.Sepa
+namespace EEG_Faktura_Tool.Sepa
 {
     internal class SepaLastschriftDocument
     {

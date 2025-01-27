@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using EEG_Faktura_Sepa_Tool.EEG_Faktura;
-using EEG_Faktura_Sepa_Tool.Sepa;
-using EEG_Faktura_Sepa_Tool.Sepa.Lastschrift;
-using EEG_Faktura_Sepa_Tool.Sepa.Ueberweisung;
+using EEG_Faktura_Tool.EEG_Faktura;
+using EEG_Faktura_Tool.Sepa;
+using EEG_Faktura_Tool.Sepa.Lastschrift;
+using EEG_Faktura_Tool.Sepa.Ueberweisung;
 
-namespace EEG_Faktura_Sepa_Tool
+namespace EEG_Faktura_Tool
 {
     internal class SepaExporter
     {

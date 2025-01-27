@@ -1,5 +1,5 @@
-﻿using EEG_Faktura_Sepa_Tool.Sepa;
-using EEG_Faktura_Sepa_Tool.Sepa.Lastschrift;
+﻿using EEG_Faktura_Tool.Sepa;
+using EEG_Faktura_Tool.Sepa.Lastschrift;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
-namespace EEG_Faktura_Sepa_Tool
+namespace EEG_Faktura_Tool
 {
     public partial class EEGFakturaTool : Form
     {
@@ -149,6 +149,12 @@ namespace EEG_Faktura_Sepa_Tool
         private void CloseApplicationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void EEGFakturaTool_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.AdresseZeile1 = "Hello World";
+            Properties.Settings.Default.Save();
         }
     }
 }

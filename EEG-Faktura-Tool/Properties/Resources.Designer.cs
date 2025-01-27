@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EEG_Faktura_Sepa_Tool.Properties
+namespace EEG_Faktura_Tool.Properties
 {
 
 

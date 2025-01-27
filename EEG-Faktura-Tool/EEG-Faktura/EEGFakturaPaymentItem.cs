@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EEG_Faktura_Sepa_Tool.EEG_Faktura
+namespace EEG_Faktura_Tool.EEG_Faktura
 {
     public class EEGFakturaPaymentItem
     {

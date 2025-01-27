@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EEG_Faktura_Sepa_Tool.Sepa.Lastschrift
+namespace EEG_Faktura_Tool.Sepa.Lastschrift
 {
     internal class SepaMandat
     {

@@ -1,4 +1,4 @@
-﻿namespace EEG_Faktura_Sepa_Tool
+﻿namespace EEG_Faktura_Tool
 {
     partial class EEGFakturaTool
     {
@@ -391,6 +391,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "EEGFakturaTool";
             this.Text = "EEG-Faktura-Tool";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EEGFakturaTool_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EEG_Faktura_Sepa_Tool.Sepa.Ueberweisung
+namespace EEG_Faktura_Tool.Sepa.Ueberweisung
 {
     public static class Mapping
     {

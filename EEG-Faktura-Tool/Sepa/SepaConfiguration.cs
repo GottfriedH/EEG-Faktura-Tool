@@ -1,8 +1,8 @@
-﻿using EEG_Faktura_Sepa_Tool.Properties;
+﻿using EEG_Faktura_Tool.Properties;
 using System;
 using System.Configuration;
 
-namespace EEG_Faktura_Sepa_Tool.Sepa
+namespace EEG_Faktura_Tool.Sepa
 {
     public class SepaConfiguration
     {
@@ -97,6 +97,10 @@ namespace EEG_Faktura_Sepa_Tool.Sepa
 
                 return new string[] { adresLine1, adresLine2 };
             }
+        }
+        public void Save()
+        {
+            Settings.Default.Save();
         }
     }
 }

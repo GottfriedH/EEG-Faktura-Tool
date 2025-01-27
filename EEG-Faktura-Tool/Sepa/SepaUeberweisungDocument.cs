@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace EEG_Faktura_Sepa_Tool.Sepa.Ueberweisung
+namespace EEG_Faktura_Tool.Sepa.Ueberweisung
 {
     internal class SepaUeberweisungDocument
     {

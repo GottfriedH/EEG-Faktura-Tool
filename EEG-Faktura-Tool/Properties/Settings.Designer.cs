@@ -10,7 +10,7 @@
 
 using Microsoft.Office.Interop.Excel;
 
-namespace EEG_Faktura_Sepa_Tool.Properties {
+namespace EEG_Faktura_Tool.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -83,6 +83,10 @@ namespace EEG_Faktura_Sepa_Tool.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Musterstraße 1")]
         public string AdresseZeile1 {
+            set
+            {
+                this["AdresseZeile1"] = value;
+            }
             get {
                 return ((string)(this["AdresseZeile1"]));
             }

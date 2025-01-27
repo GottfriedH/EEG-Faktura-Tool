@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using XmlSchemaClassGenerator;
 
-namespace EEG_Faktura_Sepa_Tool
+namespace EEG_Faktura_Tool
 {
     internal static class Program
     {

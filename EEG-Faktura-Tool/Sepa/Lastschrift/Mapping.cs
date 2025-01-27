@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EEG_Faktura_Sepa_Tool.Sepa.Lastschrift
+namespace EEG_Faktura_Tool.Sepa.Lastschrift
 {
     public static class Mapping
     {
