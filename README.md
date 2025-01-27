@@ -48,9 +48,11 @@ D) SEPA-Datenträger erstellen
 	4.2) Die Mandate werden über die Mitgliedsnummer zugeordnet. Wenn alles passt kommt die Meldung: Es konnten alle Mandate zugeordnet werden.
 	     Ansonsten die Mandate ergänzen / korrigieren und den Vorgang wiederholen
       
-	5) Menüpunkt "SEPA-Datenträger / Sepa-Datenträger erstellen" aufrufen
+	5) Im oberen Bereich der Maske die Datums für die Durchführung prüfen / anpassen
+
+	6) Menüpunkt "SEPA-Datenträger / Sepa-Datenträger erstellen" aufrufen
  
-	6) Für die Lastschriften und Überweisungen wird je eine Datei erstellt
+	7) Für die Lastschriften und Überweisungen wird je eine Datei erstellt
 	   In der Datei für die Lastschriften wir für "SEPA-Lastschriften" (Private) und "SEPA-Firmenlastschriften" je ein Bestand erstellt
 	   Es wird eine Meldung mit dem Betrag der Lastschriften und der Überweisungen angezeigt und die Differenz daraus.
 	   WICHTIG: Den Betrag, der unter Differenz ausgewiesen wird, muss mit der Summe der Rechnungen abzüglich der Gutschrifen aus der EEG-Faktura übereinstimmen.
